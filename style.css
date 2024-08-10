@@ -52,21 +52,268 @@ nav{
     padding: 8px;
     align-items: center;
 }
-.homeimage{
-    height: 500px;
+.homeimage {
+    width: 100%;
     background-image: url("./images/wall.jpeg");
+   
     background-size: cover;
-    position: relative;
     background-position: center;
     background-repeat: no-repeat;
+    height: 550px;
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
-.homehead{
+
+.homehead {
+    border: 1px solid;
+    width: 600px;
+    height: 300px;
+    background-color: rgb(240, 237, 232);
+    text-align: center;
+    padding: 100px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Updated shadow */
+}
+
+.subhead{
+    font-family: "Whisper", cursive; 
+    font-size: 2rem;
+}
+.mainhead{
+    font-size:2.5rem;
+    font-family: "Gilda Display", serif; 
+    font-weight: 300;
+}
+/* .mealtable {
+    display: flex;
+    justify-content: center; 
+    margin: 100px;
+} */
+
+.polaroid {
+    width: 300px;
+    height: 400px; /* Fixed height for the polaroid */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    background-color: white; /* Uniform background color */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; /* Hide any overflow */
+    transition: 0.3s;
+}
+.polaroid:hover{
+    width: 320px;
+    height: 420px;
+    transform: scale(1.1);
+
+}
+
+.polaroid img {
+    width: 100%;
+    height: 60%; /* Set a fixed height for the image */
+    object-fit: cover; /* Crop the image to fit the container */
+    display: block; /* Remove bottom space */
+}
+
+.pack {
+    padding: 20px;
+}
+.mealtable {
+    display: flex;
+    justify-content: center; /* Center the polaroids within the container */
+    gap: 40px; /* Space between the polaroid containers */
+    margin: 100px;
+    flex-wrap: wrap; /* Allows the items to wrap if necessary */
+}
+
+/* Container for each polaroid and its description */
+.polaroid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ensures that the description aligns with the polaroid */
+.description {
+    text-align: center;
+    padding: 20px;
+    /* margin: 30px 0 40px; */
+    font-size: 16px;
+    color: #333;
+    width: 300px; /* Matches the width of the polaroid */
+}
+.pack h2{
+    color: #434141;
+    font-family: "Gilda Display", serif;
+    font-weight: 300;
+}
+.description{
+    margin-top: 10px;
+}
+
+
+.subcontent{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: repeat(2,1fr); */
+    align-items: center;
+    gap: 20px;
+
+}
+.img1{
+    width: 500px;
+    height: 400px;
+}
+.subinput{
+    display: block;
+    margin: 20px;
    
-   width: 500px;
-   height: 300px;
-   background-color: rgb(240, 237, 232);
-   align-items: center;
-   text-align: center;
-   padding: 100px;
+    text-align: center;
+    align-items: center;
+}
+.data{
+    margin: 10px;
+    width: 250px;
+    height: 30px;
+}
+.button2{
+    margin: 30px;
+    border: solid 1px;
+    width: 200px;
+    
+    height: 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 0px 50px 0px 50px;
    
+    color: black;
+    text-align: center;
+    
+    align-items: center;
+}
+.subinput h2{
+    color: #434141;
+    font-family: "Gilda Display", serif;
+    font-weight: 300;
+    font-size: 2.2rem;
+}
+.container{
+    background-color: darkgray;
+    height: 350px;
+}
+.grid-container {
+    margin-top: 20px;
+    margin: 50px;
+    width: 100px;
+    display: grid;
+    grid-template-columns:repeat(6,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-gap: 20px;
+    padding: 10px;
+    align-items: center;
+  }
+  .grid-item{
+    width: 200px;
+    height: 50px;
+    align-items: center;
+  }
+  .group1 {
+    width: 100%;
+    height: 200px;
+}
+.team{
+    font-family: "Gilda Display", serif;
+    font-size: 1.8rem;
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 30px;
+}
+.iconcollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    color: black;
+    padding-bottom: 20px;
+}
+.icon{
+    /* border: solid; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px;
+    color: black;
+
+
+}
+.brands{
+    color: black;
+    font-size: 1.8rem;
+    
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,black,white);
+}
+
+.icon:hover .brands{
+    color: white;
+    /* animation */
+    animation: rotate 3s;
+    
+}
+@keyframes rotate{
+    0%{
+
+        transform: rotate(30deg);
+    }
+    20%{
+
+        transform: rotate(-30deg);
+    }
+    40%{
+
+        transform: rotate(30deg);
+    }
+    60%{
+
+        transform: rotate(-30deg);
+    }
+    80%{
+
+        transform: rotate(30deg);
+    }
+    100%{
+
+        transform: rotate(-30deg);
+    }
+
+}
+#contact{
+    background-color: darkgray;
+}
+.sectionHead {
+    padding-top: 20px;
+    background-color: darkgray;
+    font-family: "Whisper", cursive; 
+    font-weight: 300;
+    text-align: center;
+
+}
+footer{
+   background-color:  darkgray;
+   height: 80px;
+   
+    
+
+}
+
+
+.uparrow{
+    float: right;
+    margin: -30px 30px 30px 0px;
 }
