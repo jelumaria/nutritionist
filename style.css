@@ -49,7 +49,7 @@ nav{
     margin-right: 20px;
     color: black;
     text-align: center;
-    padding: 8px;
+    padding: 10px;
     align-items: center;
 }
 .homeimage {
@@ -200,8 +200,8 @@ nav{
     font-size: 2.2rem;
 }
 .container{
-    background-color: darkgray;
-    height: 350px;
+    /* background-color: darkgray; */
+    height: 450px;
 }
 .grid-container {
     margin-top: 20px;
@@ -295,12 +295,45 @@ nav{
 }
 #contact{
     background-color: darkgray;
+    height: 220px;
 }
 .sectionHead {
     padding-top: 20px;
     background-color: darkgray;
     font-family: "Whisper", cursive; 
     font-weight: 300;
+    text-align: center;
+
+}
+.footercontainer{
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+    
+
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+}
+.navlink{
+    text-decoration: none;
+    font-size: .8rem;
+    color: black;
+    font-family: "Gilda Display", serif;
+    font-weight: 600;
+}
+.footerlogo{
+    height: 120px;
+    align-items: center;
+    text-align: center;
+}
+.content1 p{
+    align-items: center;
     text-align: center;
 
 }
